@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Vent Tell Later</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div class="mb-5 d-flex justify-content-center">
+        <h1>Welcome to Vent Tell Later</h1>
+    </div>
+    <div class="container mt-5 gap-5  d-flex justify-content-center align-items-center">
+        <div class=" row col-3 ">
+            <h2>Please Register</h2>
+            <form action="/user/registration" method="POST">
+                <div>
+                    <label class="">
+                        Name: 
+                    </label>
+                    <input type="text" class="form-control" name="name"/>
+                </div>
+                <div>
+                    <label class="">
+                        Email:
+                    </label>
+                    <input type="text" class="form-control" name="email" id=""/>
+                </div>
+                <div>
+                    <label class="">
+                        Password:
+                    </label>
+                    <input type="password" class="form-control" name="password"/>
+                </div>
+                <div>
+                    <label class="">
+                        Password Confirmation:
+                    </label>
+                    <input type="password" class="mb-3 form-control" name="password_confirmation"/>
+                </div>
+                <button class="btn btn-dark" >Register</button>
+            </form>
+        </div>
+        <div class="login">
+            <h2>Sign in</h2>
+            <form action="/user/login" method="POST">
+                <div>
+                    <label class="">
+                        Email:
+                    </label>
+                    <input type="text" class="form-control" name="email"/>
+                </div>
+                <div>
+                    <label class="">
+                        Password:
+                    </label>
+                    <input type="password" class="mb-3 form-control" name="password">
+                </div>
+                <button class="btn btn-dark" >Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

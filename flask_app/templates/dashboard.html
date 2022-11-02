@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="mb-5 d-flex justify-content-center">
+        <h2>Welcome {{session['name']}}</h2>
+    </div>
+    <!-- <div class="container ">
+        <form method="POST" action="/appointment/made">
+            <h2>Setup appointment</h2>
+            <div>
+                <label>
+                    Topic:
+                </label>
+                <input type="text" class="form-control" name="topic" /> 
+            <div>
+                <label>
+                    context (optional):
+                </label>
+                <textarea type="text" class="form-control" name="context" > </textarea>
+            </div> -->
+            <!-- <div>
+                <label>
+                    Date:
+                </label>
+                <input type="datetime-local" name="event" ></input> 
+            </div> -->
+            <div class="calendly-inline-widget" name="event" style="min-width:320px;height:600px;" data-auto-load="false">
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+                <script>
+                Calendly.initInlineWidget({
+                url: 'https://calendly.com/venttelllater'
+                });
+                </script>
+                </div>
+                <!-- <button>Submit</button> -->
+        </form>
+    </div>
+    <p><a href="/logout">Logout</a></p>
+</body>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+</html>
