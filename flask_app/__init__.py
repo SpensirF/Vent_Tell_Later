@@ -6,5 +6,5 @@ import re
 app = Flask(__name__)
 app.secret_key = "hide your keys"
 
-DATABASE = "venttilllater_db"
+DATABASE = "venttelllater_db"
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
