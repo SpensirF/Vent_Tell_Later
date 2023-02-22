@@ -12,26 +12,6 @@
     <div class="mb-5 d-flex justify-content-center">
         <h2>Welcome {{session['name']}}</h2>
     </div>
-    <!-- <div class="container ">
-        <form method="POST" action="/appointment/made">
-            <h2>Setup appointment</h2>
-            <div>
-                <label>
-                    Topic:
-                </label>
-                <input type="text" class="form-control" name="topic" /> 
-            <div>
-                <label>
-                    context (optional):
-                </label>
-                <textarea type="text" class="form-control" name="context" > </textarea>
-            </div> -->
-            <!-- <div>
-                <label>
-                    Date:
-                </label>
-                <input type="datetime-local" name="event" ></input> 
-            </div> -->
             <div class="calendly-inline-widget" name="event" style="min-width:320px;height:600px;" data-auto-load="false">
                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
                 <script>
@@ -43,7 +23,10 @@
                 <!-- <button>Submit</button> -->
         </form>
     </div>
-    <p><a href="/logout">Logout</a></p>
+    <form class="btn" action="/logout">
+        <button type="submit">Logout</button>
+    </form>
+    <!-- <p><button class="logout" href="/logout">Logout</button ></p> -->
 </body>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 </html>

@@ -30,3 +30,11 @@ body{
         background-position: 0% 50%;
     }
 }
+.btn{
+    justify-content: center;
+    margin-left: 45%;
+    align-items: center;
+    color: yellow;
+    background-color: yellow;
+    border-radius: 12px;
+}
